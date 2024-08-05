@@ -2,18 +2,19 @@
 This is my dotfiles setup for bspwm, neovim, .zshrc and much more.
 
 # Requirements
-- Stow installed
-- Git 
-
 ```bash
 # Arch
 sudo pacman -S stow git
+
+# Important for GTK theme
+sudo yay -S gruvbox-dark-gtk
 
 # Debian
 sudo apt install stow
 
 ```
 
+# Installation
 ```bash
 # SSH
 git clone git@github.com:petersahanaya/dotfiles.git
