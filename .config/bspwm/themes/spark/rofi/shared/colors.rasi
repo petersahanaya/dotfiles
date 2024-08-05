@@ -1,0 +1,17 @@
+/* {
+    background:     #EEFFFF;
+    background-alt: #dee6e7;
+    foreground:     #303030;
+    selected:       #F0719B;
+    active:         #2ce592;
+    urgent:         #f02e6e;
+}*/
+* {
+    background:     #272822; /* Monokai background */
+    background-alt: #383830; /* Slightly lighter for alt backgrounds */
+    foreground:     #f8f8f2; /* Main text color */
+    selected:       #66d9ef; /* Light blue for selected items */
+    active:         #a6e22e; /* Green for active items */
+    urgent:         #f92672; /* Red for urgent items */
+}
+
