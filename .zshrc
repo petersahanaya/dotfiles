@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="archcraft"
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME="archcraft"
@@ -73,6 +73,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+eval "$(starship init zsh)"
 
 # User configuration
 
@@ -82,11 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='vim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -103,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# On-demand rehash
+#On-demand rehash
 zshcache_time="$(date +%s%N)"
 
 autoload -Uz add-zsh-hook
@@ -139,14 +140,20 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin master'
 alias vim='nvim'
+
+# nvm 
 [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
 source /usr/share/nvm/nvm.sh
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
+
+# tmux file conf
 export TMUX_CONF="$HOME/.config/tmux/tmux.conf"
 
 # Automatically start tmux if not already inside a tmux session
-if [ -z "$TMUX" ]; then
-  # Start a new tmux session
-  tmux attach-session -t default || tmux new-session -s default
-fi
+ if [ -z "$TMUX" ]; then
+   # Start a new tmux session
+   tmux attach-session -t default || tmux new-session -s default
+ fi
+
+

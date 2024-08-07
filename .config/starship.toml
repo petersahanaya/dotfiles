@@ -1,0 +1,50 @@
+add_newline = false
+
+# A minimal left prompt
+format = """$directory$character"""
+palette = "monokai_classic"
+# move the rest of the prompt to the right
+right_format = """$all"""
+
+
+[git_branch]
+format =  '[$symbol$branch(:$remote_branch)]($style)'
+
+[golang]
+format = '[ ](bold cyan)'
+
+[directory]
+truncation_length = 4
+# Catppuccin 'lavender'
+style = "bold lavender"
+
+[palettes.monokai_classic]
+rosewater = "#f8f8f2"
+flamingo = "#f92672"
+pink = "#f92672"
+mauve = "#ae81ff"
+red = "#f92672"
+maroon = "#e9575e"
+peach = "#fd971f"
+yellow = "#f4bf75"
+green = "#a6e22e"
+teal = "#5f9266"
+sky = "#66d9ef"
+sapphire = "#66d9ef"
+blue = "#66d9ef"
+lavender = "#ae81ff"
+text = "#f8f8f2"
+subtext1 = "#f8f8f2"
+subtext0 = "#f8f8f2"
+overlay2 = "#75715e"
+overlay1 = "#5c5c5c"
+overlay0 = "#3e3e3e"
+surface2 = "#3e3e3e"
+surface1 = "#2e2e2e"
+surface0 = "#1e1e1e"
+base = "#272822"
+mantle = "#1e1e1e"
+crust = "#1e1e1e"
+
+[character]
+success_symbol = '[➜](bold fg:green)'
