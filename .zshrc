@@ -144,3 +144,9 @@ source /usr/share/nvm/nvm.sh
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 export TMUX_CONF="$HOME/.config/tmux/tmux.conf"
+
+# Automatically start tmux if not already inside a tmux session
+if [ -z "$TMUX" ]; then
+  # Start a new tmux session
+  tmux attach-session -t default || tmux new-session -s default
+fi
