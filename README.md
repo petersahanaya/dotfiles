@@ -8,6 +8,7 @@ This is my minimal configuration on i3WM, which is really lightweight, using bui
 ```sh
 sudo pacman -S kitty polybar picom thunar bluez bluez-utils blueman xfce4-screenshooter
 ```
+also you need to install whitesur-gtk-themes and mcmojave-icons and whitesur-grey-icons
 
 ## Optional but good to have
 ```sh
