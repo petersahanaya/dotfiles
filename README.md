@@ -2,6 +2,7 @@
 This is my minimal configuration on i3WM, which is really lightweight, using build in dmenu. wifi using nmcli or nmtui, bluetooth using blueman.
 
 ![Footage](https://github.com/user-attachments/assets/7e532ebf-62db-4576-9ecf-1994c5fe6ff2)
+![Footage-2](https://github.com/user-attachments/assets/7cfff875-bc99-41bd-ba1a-5d61c7a092eb)
 
 ## Requirements
 ```sh
