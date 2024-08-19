@@ -1,6 +1,8 @@
 # My Personal dotfiles arch linux - I3WM 
 This is my minimal configuration on i3WM, which is really lightweight, using build in dmenu. wifi using nmcli or nmtui, bluetooth using blueman.
 
+![Footage](https://github.com/user-attachments/assets/7e532ebf-62db-4576-9ecf-1994c5fe6ff2)
+
 ## Requirements
 ```sh
 sudo pacman -S kitty polybar picom thunar bluez bluez-utils blueman xfce4-screenshooter
@@ -8,6 +10,7 @@ sudo pacman -S kitty polybar picom thunar bluez bluez-utils blueman xfce4-screen
 
 ## Optional but good to have
 ```sh
+
 yay -S zsh ttf-jetbrains-mono-nerd ttf-font-awesome
 ```
 
